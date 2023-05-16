@@ -12,6 +12,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+     
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-472H0PMXB4"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)}
+        gtag('js', new Date());
+        gtag('config', 'G-472H0PMXB4');
+      </script>
       <body className={inter.className}>
         {children}
         <Analytics />
